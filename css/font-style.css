@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'sf-regular';
+    src: url('./fonts/SFProDisplayRegular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'sf-bold';
+    src: url('./fonts/SFProDisplayBold.otf') format('opentype');
+}
+
+body, * {
+    font-family: 'sf-regular', sans-serif;
+}

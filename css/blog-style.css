@@ -1,0 +1,30 @@
+/* Grid layout */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Sidebar */
+aside h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+aside ul {
+  padding-left: 0;
+}
+
+aside li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+aside li a {
+  color: #041562;
+  font-size: 1rem;
+}
+
+aside li a:hover {
+  text-decoration: underline;
+}

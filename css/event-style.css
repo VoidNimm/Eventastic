@@ -1,0 +1,46 @@
+/* Footer tetap di bawah */
+footer {
+  margin-top: auto;
+  background-color: #041562;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+  
+  /* Make sure the cards align properly on small screens */
+  @media (max-width: 768px) {
+    .card {
+      transform: scale(1); /* Remove the scaling on small devices */
+    }
+  
+    .card:hover {
+      transform: scale(1); /* Remove the hover scale effect */
+      box-shadow: none; /* Remove the shadow on small devices */
+    }
+  
+    .card img {
+      transform: scale(1); /* Remove image zoom effect on mobile */
+    }
+    
+    .card-body::before {
+      opacity: 0; /* Remove the overlay on small devices */
+    }
+  }
+  
+  /* For large screens (desktop), the layout should have multiple cards in one row */
+  @media (min-width: 768px) {
+    .card {
+      flex: 1 1 calc(33.33% - 30px); /* Three cards per row with some space in between */
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+  }
+  
+  /* For small screens (mobile), display one card per row */
+  @media (max-width: 576px) {
+    .card {
+      flex: 1 1 100%; /* One card per row */
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
